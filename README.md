@@ -66,9 +66,16 @@ codex plugin add zugel@hello2morrow
 
 Codex has no plugin settings, so Zügel starts a 30-day evaluation; when it ends, give the agent
 your activation code or the path of your license file. Zügel binds to a repository when the agent
-first needs it, and always uses the newest server version your license covers. In the first
-Codex session after a new Zügel version appears, the launcher is still downloading it when the
-agent begins, so that one session has no Zügel; the next one has.
+first needs it, and always uses the newest server version your license covers.
+
+Two things to know about Codex:
+
+- **The first session after installing, and the first after a new Zügel version appears, has no
+  Zügel.** Codex lets the agent begin before Zügel is ready, and the launcher is still downloading
+  it. The next session has it.
+- **Codex gives every tool call 60 seconds**, and a plugin cannot change that. The first scan of a
+  large project can take longer, and Codex then reports a timeout. Ask again a minute later: once
+  Zügel has scanned a project, it loads it from its cache in seconds.
 
 The plugin's `zugel` skill tells the agent when to use Zügel. For a project you work on
 regularly, also add the block `generate_config` offers for the agent's instructions to the
