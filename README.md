@@ -31,9 +31,13 @@ claude plugin marketplace add hello2morrow/zugel
 claude plugin install zugel@hello2morrow
 ```
 
-When you enable the plugin, Claude Code asks for your activation code or the path to your
-license file and keeps it in your system's secure credential store. Entering it means you accept
-the [Zügel EULA](https://www.hello2morrow.com/products/zugel/eula).
+When you enable the plugin, Claude Code asks for your license. Fill in one of the two fields:
+
+- **License file**: the `.license` file you received, for example with an evaluation license.
+- **Activation code**: Claude Code keeps it in your system's secure credential store.
+
+Entering either means you accept the [Zügel EULA](https://www.hello2morrow.com/products/zugel/eula).
+You can change both later in `/config`.
 
 Zügel binds to the project you start Claude Code in. If the project has no `zugel.json` yet,
 Zügel starts in bootstrap mode and the agent offers to generate one. Commit it to your
@@ -42,7 +46,8 @@ describes the configuration per language, and the
 [manual](https://blog.hello2morrow.com/2026/07/sonargraph-mcp-2/) covers everything else.
 
 The plugin also lets you choose the server version in `/config`: `latest` (the default), a line
-such as `26.5.x`, or an exact version such as `26.5.1`.
+such as `26.6.x`, or an exact version such as `26.6.2`. The plugin needs server 26.6.2 or newer,
+so do not pin an older one.
 
 ## What it runs, downloads and sends
 
