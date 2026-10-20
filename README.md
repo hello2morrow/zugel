@@ -41,8 +41,9 @@ When you enable the plugin, Claude Code asks for your license:
 - **Activation code**: Claude Code keeps it in your system's secure credential store.
 
 Using Zügel means you accept the [Zügel EULA](https://www.hello2morrow.com/products/zugel/eula).
-You can change the license later in `/config`, for example to enter the activation code of your
-subscription when the evaluation ends.
+When the evaluation ends and you have a subscription, give the agent its activation code: Zügel
+activates it at once and keeps using it from then on. Or enter it in `/config`, which keeps the
+code out of the conversation.
 
 Zügel binds to the project you start Claude Code in. If the project has no `zugel.json` yet,
 Zügel starts in bootstrap mode and the agent offers to generate one. Commit it to your
