@@ -55,6 +55,23 @@ The plugin also lets you choose the server version in `/config`: `latest` (the d
 such as `26.6.x`, or an exact version such as `26.6.2`. The plugin needs server 26.6.2 or newer,
 so do not pin an older one.
 
+## Install in Codex
+
+The same repository is a Codex plugin marketplace:
+
+```
+codex plugin marketplace add hello2morrow/zugel
+codex plugin add zugel@hello2morrow
+```
+
+Codex has no plugin settings, so Zügel starts a 30-day evaluation; when it ends, give the agent
+your activation code or the path of your license file. Zügel binds to a repository when the agent
+first needs it, and always uses the newest server version your license covers.
+
+The plugin's `zugel` skill tells the agent when to use Zügel. For a project you work on
+regularly, also add the block `generate_config` offers for the agent's instructions to the
+project's `AGENTS.md`: that file is read in every session.
+
 ## What it runs, downloads and sends
 
 This plugin contains one file that runs: `zugel-launcher.jar`, a small launcher signed by

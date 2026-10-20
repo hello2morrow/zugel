@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "zugel",
+  "version": "1.0.5",
+  "description": "Keeps AI coding agents inside your architecture: checks every new dependency against your .arc rules and stops dependency cycles from growing. Java, C# and Python.",
+  "author": {
+    "name": "hello2morrow GmbH",
+    "email": "info@hello2morrow.com",
+    "url": "https://www.hello2morrow.com"
+  },
+  "homepage": "https://www.hello2morrow.com/products/zugel",
+  "repository": "https://github.com/hello2morrow/zugel",
+  "license": "LicenseRef-Zugel-EULA",
+  "keywords": [
+    "architecture",
+    "dependencies",
+    "cycles",
+    "java",
+    "csharp",
+    "python",
+    "sonargraph"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Zügel",
+        "shortDescription": "Architecture rules and cycle control for AI coding agents",
+        "longDescription": "Keeps AI coding agents inside your architecture: checks every new dependency against your .arc rules and stops dependency cycles from growing. Java, C# and Python.",
+        "developerName": "hello2morrow GmbH",
+        "category": "Coding",
+        "websiteURL": "https://www.hello2morrow.com/products/zugel",
+        "privacyPolicyURL": "https://www.hello2morrow.com/privacy",
+        "termsOfServiceURL": "https://www.hello2morrow.com/products/zugel/eula",
+        "logo": "./.claude-plugin/icon.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "hello2morrow",
+  "interface": {
+    "displayName": "hello2morrow"
+  },
+  "plugins": [
+    {
+      "name": "zugel",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    }
+  ]
+}
