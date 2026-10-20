@@ -42,13 +42,15 @@
     "license_file": {
       "type": "file",
       "title": "Zügel license file",
-      "description": "The .license file you received, for example for an evaluation. Leave empty if you use an activation code. By entering it you accept the Zügel EULA at https://www.hello2morrow.com/products/zugel/eula"
+      "description": "The .license file you received. Leave both license fields empty to start a 30-day evaluation. By entering a license you accept the Zügel EULA at https://www.hello2morrow.com/products/zugel/eula",
+      "default": ""
     },
     "activation_code": {
       "type": "string",
       "title": "Zügel activation code",
-      "description": "Your activation code. Leave empty if you use a license file. By entering it you accept the Zügel EULA at https://www.hello2morrow.com/products/zugel/eula",
-      "sensitive": true
+      "description": "Your activation code. Leave both license fields empty to start a 30-day evaluation. By entering a license you accept the Zügel EULA at https://www.hello2morrow.com/products/zugel/eula",
+      "sensitive": true,
+      "default": ""
     },
     "server_version": {
       "type": "string",

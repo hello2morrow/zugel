@@ -8,8 +8,9 @@ cycles were added or removed. Violations and cycles become ratchets the agent ma
 down. Zügel supports Java, C# and Python, and works with or without
 [Sonargraph](https://www.hello2morrow.com/products/sonargraph).
 
-Zügel is commercial software from [hello2morrow](https://www.hello2morrow.com). You need a
-license key; [request a free evaluation license](https://www.hello2morrow.com/products/zugel).
+Zügel is commercial software from [hello2morrow](https://www.hello2morrow.com). You can try it for
+30 days without registering; after that it needs a
+[subscription](https://www.hello2morrow.com/products/zugel/pricing).
 
 ## Requirements
 
@@ -31,13 +32,17 @@ claude plugin marketplace add hello2morrow/zugel
 claude plugin install zugel@hello2morrow
 ```
 
-When you enable the plugin, Claude Code asks for your license. Fill in one of the two fields:
+When you enable the plugin, Claude Code asks for your license:
 
-- **License file**: the `.license` file you received, for example with an evaluation license.
+- **Nothing**: leave both fields empty and Zügel starts a 30-day evaluation for your computer.
+  Each computer can evaluate Zügel once. In the last five days the agent tells you when the
+  evaluation ends.
+- **License file**: the `.license` file you received.
 - **Activation code**: Claude Code keeps it in your system's secure credential store.
 
-Entering either means you accept the [Zügel EULA](https://www.hello2morrow.com/products/zugel/eula).
-You can change both later in `/config`.
+Using Zügel means you accept the [Zügel EULA](https://www.hello2morrow.com/products/zugel/eula).
+You can change the license later in `/config`, for example to enter the activation code of your
+subscription when the evaluation ends.
 
 Zügel binds to the project you start Claude Code in. If the project has no `zugel.json` yet,
 Zügel starts in bootstrap mode and the agent offers to generate one. Commit it to your
@@ -63,6 +68,9 @@ hello2morrow GmbH. Claude Code starts it as a local MCP server with `java -jar`.
   or with your organisation's on-premises license server if you configure one. The check sends
   the license key, the product version and build date, the operating system name and version,
   your operating-system user name, and the MAC addresses of your computer.
+- **Evaluation request.** Started without a license, Zügel requests an evaluation license from
+  `https://www.hello2morrow.com`. The request sends the MAC addresses of your computer, which
+  hello2morrow keeps for one year so that a computer can evaluate Zügel only once.
 - **Your code stays on your machine.** Zügel parses and analyses source code locally. It never
   sends source code, architecture models or analysis results anywhere.
 
