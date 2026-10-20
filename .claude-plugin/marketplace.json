@@ -1,0 +1,15 @@
+{
+  "name": "hello2morrow",
+  "description": "Plugins from hello2morrow, the makers of Sonargraph",
+  "owner": {
+    "name": "hello2morrow GmbH",
+    "email": "info@hello2morrow.com"
+  },
+  "plugins": [
+    {
+      "name": "zugel",
+      "source": "./",
+      "description": "Keeps AI coding agents inside your architecture: architecture rules and cycle control for Java, C# and Python"
+    }
+  ]
+}

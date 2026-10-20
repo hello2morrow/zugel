@@ -1,0 +1,47 @@
+{
+  "name": "zugel",
+  "displayName": "Zügel",
+  "version": "1.0.5",
+  "description": "Keeps AI coding agents inside your architecture: checks every new dependency against your .arc rules and stops dependency cycles from growing. Java, C# and Python.",
+  "author": {
+    "name": "hello2morrow GmbH",
+    "email": "info@hello2morrow.com",
+    "url": "https://www.hello2morrow.com"
+  },
+  "homepage": "https://www.hello2morrow.com/products/zugel",
+  "repository": "https://github.com/hello2morrow/zugel",
+  "license": "LicenseRef-Zugel-EULA",
+  "keywords": ["architecture", "dependencies", "cycles", "java", "csharp", "python", "sonargraph"],
+  "documentationUrl": "https://blog.hello2morrow.com/2026/09/first-steps-with-zugel/",
+  "supportUrl": "https://www.hello2morrow.com/support",
+  "privacyPolicyUrl": "https://www.hello2morrow.com/privacy",
+  "termsOfServiceUrl": "https://www.hello2morrow.com/products/zugel/eula",
+  "mcpServers": {
+    "zugel": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "${CLAUDE_PLUGIN_ROOT}/zugel-launcher.jar",
+        "${user_config.license}",
+        "--project_root",
+        "${CLAUDE_PROJECT_DIR}",
+        "--launcher.server_version=${user_config.server_version}"
+      ]
+    }
+  },
+  "userConfig": {
+    "server_version": {
+      "type": "string",
+      "title": "Zügel server version",
+      "description": "latest (the default) always runs the newest version your license covers; 26.5.x stays on that line; 26.5.1 pins one exact version",
+      "default": "latest"
+    },
+    "license": {
+      "type": "string",
+      "title": "Zügel license",
+      "description": "Your activation code, or the path to a license file. By entering it you accept the Zügel EULA at https://www.hello2morrow.com/products/zugel/eula",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}

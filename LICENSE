@@ -1,0 +1,16 @@
+Zügel is proprietary software of hello2morrow GmbH, Germany.
+
+Copyright (c) 2026 hello2morrow GmbH. All rights reserved.
+
+Use of the Zügel launcher in this repository, and of every Zügel MCP server
+version it downloads, is governed by the Zügel End-User License Agreement:
+
+    https://www.hello2morrow.com/products/zugel/eula
+
+You may download, install, cache and fork this repository through the
+channels that agreement names. Using Zügel requires a valid license key;
+an evaluation license is free on request from https://www.hello2morrow.com.
+
+The launcher bundles third-party libraries. Their license terms and notices
+are in the LICENSE, NOTICE and thirdparty-LICENSE files under META-INF/ inside
+zugel-launcher.jar.
