@@ -20,6 +20,7 @@
     "python",
     "sonargraph"
   ],
+  "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://blog.hello2morrow.com/2026/09/first-steps-with-zugel/",
   "supportUrl": "https://www.hello2morrow.com/support",
   "privacyPolicyUrl": "https://www.hello2morrow.com/privacy",
